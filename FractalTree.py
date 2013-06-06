@@ -1,30 +1,20 @@
 import turtle
+import math
+import random
 
 class FractalTree():
 
 	def __init__(self, james, window):
-		self.james = james
-		self.window = window
-		
 		self.setup()
-		
-		self.drawTree(5)
-	
 		window.exitonclick()
 	
 	def setup(self):
-		self.getJames().left(90)
-		self.getJames().color("blue")
-		self.getJames().penup()
-		self.getJames().backward(150)
-		self.getJames().pendown()
-		self.getJames().forward(100)
-	
-	def getJames(self):
-		return self.james
-    
-	def getWindow(self):
-		return self.window
+		james.left(90)
+		james.color("blue")
+		james.penup()
+		james.backward(150)
+		james.pendown()
+		self.drawTree(5)
 		
 	def drawTree(self, n):
 		return
