@@ -4,7 +4,7 @@ import random
 
 class FractalTree():
 
-	def __init__(self):
+	def __init__(self, n):
 		turtle.mode("logo")
 		james.speed(10)
 		james.color("blue")
@@ -14,7 +14,7 @@ class FractalTree():
 		james.pd()
 		james.forward(100)
 		james.pu()
-		self.drawTree(12, 60, 0, -200, 0, 10)
+		self.drawTree(n, 60, 0, -200, 0, 10)
 		window.exitonclick()
 		
 	def drawTree(self, n, length, x, y, prevAngle, sizeOfPen):
@@ -31,8 +31,8 @@ class FractalTree():
 		
 		james.pd()
 		
-		angle1 = prevAngle + random.randrange(5, 40)
-		angle2 = prevAngle - random.randrange(5, 40)
+		angle1 = prevAngle + random.randrange(20, 40)
+		angle2 = prevAngle - random.randrange(20, 30)
 		
 		james.setheading(angle1)
 		
@@ -68,4 +68,4 @@ window = turtle.Screen()
 
 james = turtle.Turtle()
 
-tree = FractalTree()
+tree = FractalTree(12)
