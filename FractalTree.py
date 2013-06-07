@@ -45,7 +45,7 @@ class FractalTree():
 		y1 = james.pos()[1]
 		
 		if n == 1:
-			james.dot(3, james.pencolor())
+			james.dot(2, "green")
 			
 #		if random.random() <= 0.49:
 #			james.color("red")
@@ -60,7 +60,7 @@ class FractalTree():
 		y2 = james.pos()[1]
 		
 		if n == 1:
-			james.dot(3, james.pencolor())
+			james.dot(2, "green")
 		
 		james.pu()
 		
