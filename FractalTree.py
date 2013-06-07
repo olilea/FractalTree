@@ -71,6 +71,5 @@ class FractalTree():
 window = turtle.Screen()
 
 james = turtle.Turtle()
-james.tracer()
 
 tree = FractalTree(12)
