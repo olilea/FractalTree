@@ -5,11 +5,17 @@ import random
 class FractalTree():
 
 	def __init__(self):
-		self.setup()
-		window.exitonclick()
-	
-	def setup(self):
+		turtle.mode("logo")
+		james.speed(10)
+		james.color("blue")
+		james.pensize(10)
+		james.pu()
+		james.backward(300)
+		james.pd()
+		james.forward(100)
+		james.pu()
 		self.drawTree(12, 60, 0, -200, 0, 10)
+		window.exitonclick()
 		
 	def drawTree(self, n, length, x, y, prevAngle, sizeOfPen):
 		if n == 0:
@@ -61,17 +67,5 @@ class FractalTree():
 window = turtle.Screen()
 
 james = turtle.Turtle()
-
-turtle.mode("logo")
-
-james.speed(10)
-james.color("blue")
-james.pensize(10)
-
-james.pu()
-james.backward(300)
-james.pd()
-james.forward(100)
-james.pu()
 
 tree = FractalTree()
