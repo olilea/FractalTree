@@ -1,10 +1,9 @@
 import turtle
-import math
 import random
 
 #20, 30 with 20, 40 and 0.7, 0.90 with 0.7, 0.95 produce good trees
-# as does 20, 40 with 20, 50 and both at 0.7, 0.95
 #first two produced with top
+#last with same except both used 0.7, 0.95
 
 class FractalTree():
 
@@ -36,7 +35,7 @@ class FractalTree():
 		james.pd()
 		
 		angle1 = prevAngle + random.randrange(20, 40)
-		angle2 = prevAngle - random.randrange(20, 50)
+		angle2 = prevAngle - random.randrange(20, 30)
 		
 		james.setheading(angle1)
 		
