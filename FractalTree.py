@@ -41,12 +41,12 @@ class FractalTree():
 		y1 = james.pos()[1]
 		
 		if n == 1:
-			james.dot(5, james.pencolor())
+			james.dot(3, james.pencolor())
 			
-		if random.random() <= 0.49:
-			james.color("red")
-		else:
-			james.color("blue")
+#		if random.random() <= 0.49:
+#			james.color("red")
+#		else:
+#			james.color("blue")
 		
 		james.backward(length)
 		james.setheading(angle2)
@@ -56,12 +56,12 @@ class FractalTree():
 		y2 = james.pos()[1]
 		
 		if n == 1:
-			james.dot(1, james.pencolor())
+			james.dot(3, james.pencolor())
 		
 		james.pu()
 		
-		self.drawTree(n - 1, random.uniform(0.70, 0.92) * length, x1, y1, angle1, newPenSize)
-		self.drawTree(n - 1, random.uniform(0.70, 0.92) * length, x2, y2, angle2, newPenSize)
+		self.drawTree(n - 1, random.uniform(0.70, 0.90) * length, x1, y1, angle1, newPenSize)
+		self.drawTree(n - 1, random.uniform(0.70, 0.95) * length, x2, y2, angle2, newPenSize)
 		
     
 window = turtle.Screen()
