@@ -17,7 +17,7 @@ class FractalTree():
 		james.pd()
 		james.forward(100)
 		james.pu()
-		james.tracer(50)
+		james.tracer(100)
 		self.drawTree(n, 60, 0, -200, 0, 10)
 		window.exitonclick()
 		
@@ -36,7 +36,7 @@ class FractalTree():
 		james.pd()
 		
 		angle1 = prevAngle + random.randrange(20, 40)
-		angle2 = prevAngle - random.randrange(20, 30)
+		angle2 = prevAngle - random.randrange(20, 40)
 		
 		james.setheading(angle1)
 		
@@ -72,4 +72,4 @@ window = turtle.Screen()
 
 james = turtle.Turtle()
 
-tree = FractalTree(12)
+tree = FractalTree(14)
