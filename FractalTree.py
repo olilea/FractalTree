@@ -17,7 +17,7 @@ class FractalTree():
 		james.pd()
 		james.forward(100)
 		james.pu()
-		james.tracer(100)
+		james.tracer(200)
 		self.drawTree(n, 60, 0, -200, 0, 10)
 		window.exitonclick()
 		
@@ -46,11 +46,11 @@ class FractalTree():
 		
 		if n == 1:
 			james.dot(2, "green")
-			
-#		if random.random() <= 0.49:
-#			james.color("red")
-#		else:
-#			james.color("blue")
+		
+		if n == 2:
+			if random.random() <= 0.49:
+				james.dot(2, "green")
+				return
 		
 		james.backward(length)
 		james.setheading(angle2)
