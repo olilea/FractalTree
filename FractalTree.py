@@ -45,11 +45,12 @@ class FractalTree():
 		y1 = james.pos()[1]
 		
 		if n == 1:
-			james.dot(2, "green")
+			james.dot(4, "green")
 		
 		if n == 2:
 			if random.random() <= 0.49:
 				james.dot(2, "green")
+				james.pu()
 				return
 		
 		james.backward(length)
