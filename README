@@ -1,0 +1,3 @@
+This python script works entirely from running the script, and utilizes the Turtle module to draw a binary (in most cases) tree. The number of iterations of the tree can be customised.
+
+Many features of the tree are randomised, such as early termination of the branch one iteration before the given n iterations, the angle of the branch in proportion to the contect of the angle of the new branches parent, and the length of the branch.
