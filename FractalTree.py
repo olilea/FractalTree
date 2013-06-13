@@ -73,4 +73,6 @@ window = turtle.Screen()
 
 james = turtle.Turtle()
 
-tree = FractalTree(14)
+n = input("Please enter the number of iterations? 14 is optimal: ")
+
+tree = FractalTree(n)
